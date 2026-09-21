@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUCLEUS — Learn • Practice • Succeed</title>
+<meta name="description" content="NUCLEUS online learning platform for classes 6–10. Study notes, PDFs, video lessons and courses.">
+<style>
+:root{--primary:#4f46e5;--secondary:#06b6d4;--dark:#111827;--muted:#64748b;--light:#f8fafc;--card:#fff;--border:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--dark);background:var(--light);line-height:1.6}
+.container{max-width:1120px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px;color:var(--primary)}nav a{color:#334155;text-decoration:none;margin-left:22px;font-weight:600}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{padding:78px 0 65px;background:linear-gradient(135deg,#eef2ff,#ecfeff)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+.badge{display:inline-block;padding:7px 13px;border-radius:999px;background:#e0e7ff;color:#3730a3;font-weight:700;font-size:14px}
+h1{font-size:clamp(40px,6vw,64px);line-height:1.05;margin:18px 0}.hero p{font-size:19px;color:#475569;max-width:650px}
+.btn{display:inline-block;padding:12px 19px;border-radius:12px;text-decoration:none;font-weight:800;margin:8px 8px 0 0;border:0;cursor:pointer;font-size:15px}
+.btn-primary{background:var(--primary);color:white}.btn-light{background:white;color:var(--dark);border:1px solid var(--border)}
+.hero-card{background:white;border:1px solid var(--border);padding:28px;border-radius:24px;box-shadow:0 18px 50px #33415518}.hero-card h3{margin-top:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.stat{background:#f8fafc;padding:15px;border-radius:14px;text-align:center}.stat strong{display:block;font-size:23px}
+section{padding:70px 0}.section-title{text-align:center;margin-bottom:35px}.section-title h2{font-size:34px;margin:0 0 8px}.section-title p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:23px;box-shadow:0 8px 25px #0f172a08}.card h3{margin:8px 0}.icon{font-size:32px}.tag{display:inline-block;padding:4px 9px;background:#eef2ff;color:#4338ca;border-radius:7px;font-size:12px;font-weight:800}
+.price{font-size:25px;font-weight:900;margin:15px 0}
+.filters{text-align:center;margin-bottom:25px}.filter{border:1px solid var(--border);background:white;border-radius:999px;padding:9px 15px;margin:4px;cursor:pointer}.filter.active{background:var(--primary);color:#fff}
+.video{overflow:hidden;padding:0}.video .thumb{height:150px;background:linear-gradient(135deg,#312e81,#0891b2);display:grid;place-items:center;color:white;font-size:50px}.video-content{padding:20px}
+.features .card{text-align:center}
+.cta{background:var(--dark);color:white;border-radius:28px;padding:45px;text-align:center}.cta p{color:#cbd5e1}
+footer{background:#0b1120;color:#cbd5e1;padding:40px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer-title{color:white;font-weight:900;font-size:22px}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:30;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{background:white;max-width:480px;width:100%;padding:28px;border-radius:20px}.close{float:right;border:0;background:none;font-size:25px;cursor:pointer}
+input,select{width:100%;padding:12px;margin:7px 0 14px;border:1px solid var(--border);border-radius:10px;font-size:15px}
+@media(max-width:760px){nav{display:none}.menu{display:block}.hero-grid,.grid,.footer-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr 1fr}.nav.mobile nav{display:flex;position:absolute;top:70px;left:0;right:0;background:white;padding:18px;flex-direction:column;border-bottom:1px solid var(--border)}nav a{margin:7px 0}.hero{padding-top:50px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav" id="nav">
+<a class="logo" href="#home">NUCLEUS</a>
+<nav>
+<a href="#home">Home</a><a href="#notes">Notes</a><a href="#videos">Videos</a><a href="#courses">Courses</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+<button class="menu" onclick="document.getElementById('nav').classList.toggle('mobile')">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<span class="badge">ONLINE LEARNING • CLASSES 6–10</span>
+<h1>Learn better.<br><span style="color:var(--primary)">Grow smarter.</span></h1>
+<p>NUCLEUS brings study notes, useful PDFs, video lessons and courses together in one simple online learning platform.</p>
+<a class="btn btn-primary" href="#notes">Explore Notes</a>
+<a class="btn btn-light" href="#videos">Watch Videos</a>
+</div>
+<div class="hero-card">
+<h3>📚 Your digital study room</h3>
+<p>Find organised learning materials by class and subject.</p>
+<div class="stats"><div class="stat"><strong>6–10</strong>Classes</div><div class="stat"><strong>3+</strong>Subjects</div><div class="stat"><strong>24/7</strong>Access</div></div>
+</div>
+</div>
+</section>
+
+<section id="notes">
+<div class="container">
+<div class="section-title"><h2>📚 Notes & PDFs</h2><p>Choose a class and find the study material you need.</p></div>
+<div class="filters">
+<button class="filter active" onclick="filterNotes('all',this)">All</button><button class="filter" onclick="filterNotes('6',this)">Class 6</button><button class="filter" onclick="filterNotes('7',this)">Class 7</button><button class="filter" onclick="filterNotes('8',this)">Class 8</button><button class="filter" onclick="filterNotes('9',this)">Class 9</button><button class="filter" onclick="filterNotes('10',this)">Class 10</button>
+</div>
+<div class="grid" id="notesGrid">
+<div class="card note" data-class="6"><span class="tag">CLASS 6</span><h3>Mathematics Complete Notes</h3><p>Chapter-wise revision notes and practice material.</p><div class="price">₹49</div><button class="btn btn-primary" onclick="buy('Mathematics Complete Notes')">Buy Now</button></div>
+<div class="card note" data-class="7"><span class="tag">CLASS 7</span><h3>Science Revision Notes</h3><p>Easy-to-revise chapter summaries and key points.</p><div class="price">₹59</div><button class="btn btn-primary" onclick="buy('Science Revision Notes')">Buy Now</button></div>
+<div class="card note" data-class="8"><span class="tag">CLASS 8</span><h3>English Study Pack</h3><p>Grammar, writing and literature revision material.</p><div class="price">₹59</div><button class="btn btn-primary" onclick="buy('English Study Pack')">Buy Now</button></div>
+<div class="card note" data-class="9"><span class="tag">CLASS 9</span><h3>Maths Exam Pack</h3><p>Formula sheets, solved examples and practice sets.</p><div class="price">₹79</div><button class="btn btn-primary" onclick="buy('Maths Exam Pack')">Buy Now</button></div>
+<div class="card note" data-class="10"><span class="tag">CLASS 10</span><h3>Science Complete Revision</h3><p>Board-focused revision notes and important questions.</p><div class="price">₹99</div><button class="btn btn-primary" onclick="buy('Science Complete Revision')">Buy Now</button></div>
+<div class="card note" data-class="10"><span class="tag">CLASS 10</span><h3>Maths Formula & Practice Pack</h3><p>Important formulas with practice questions.</p><div class="price">₹89</div><button class="btn btn-primary" onclick="buy('Maths Formula & Practice Pack')">Buy Now</button></div>
+</div>
+</div>
+</section>
+
+<section id="videos" style="background:white">
+<div class="container">
+<div class="section-title"><h2>🎥 Video Classes</h2><p>Upload your lessons to build your own online classroom.</p></div>
+<div class="grid">
+<div class="card video"><div class="thumb">▶</div><div class="video-content"><span class="tag">CLASS 6 • MATHS</span><h3>Introduction to Fractions</h3><p>Sample lesson — replace this card with your video.</p><button class="btn btn-primary" onclick="playDemo()">Watch</button></div></div>
+<div class="card video"><div class="thumb">▶</div><div class="video-content"><span class="tag">CLASS 9 • SCIENCE</span><h3>Force & Laws of Motion</h3><p>Sample lesson — add your YouTube/video link.</p><button class="btn btn-primary" onclick="playDemo()">Watch</button></div></div>
+<div class="card video"><div class="thumb">▶</div><div class="video-content"><span class="tag">CLASS 10 • ENGLISH</span><h3>Grammar Revision</h3><p>Sample lesson — add your video here.</p><button class="btn btn-primary" onclick="playDemo()">Watch</button></div></div>
+</div>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<div class="section-title"><h2>🎓 Courses</h2><p>Organise your complete learning programs.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📐</div><h3>Mathematics</h3><p>Classes 6–10 • Lessons, notes and practice.</p><button class="btn btn-primary" onclick="enroll('Mathematics')">View Course</button></div>
+<div class="card"><div class="icon">🔬</div><h3>Science</h3><p>Classes 6–10 • Concepts, revision and questions.</p><button class="btn btn-primary" onclick="enroll('Science')">View Course</button></div>
+<div class="card"><div class="icon">📖</div><h3>English</h3><p>Classes 6–10 • Grammar, writing and literature.</p><button class="btn btn-primary" onclick="enroll('English')">View Course</button></div>
+</div>
+</div>
+</section>
+
+<section class="features" id="about">
+<div class="container">
+<div class="section-title"><h2>Why NUCLEUS?</h2><p>Simple tools designed to make self-study easier.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📱</div><h3>Learn Anywhere</h3><p>Access your study materials from a phone, tablet or computer.</p></div>
+<div class="card"><div class="icon">📝</div><h3>Smart Notes</h3><p>Clear, organised and exam-friendly study materials.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Focused Learning</h3><p>Study by class, subject and topic without unnecessary clutter.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta"><h2>Start learning with NUCLEUS</h2><p>Explore notes, watch lessons and build your study routine.</p><a class="btn btn-primary" href="#notes">Browse Study Materials</a></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact NUCLEUS</h2><p>For course or notes enquiries, add your preferred contact details here.</p></div>
+<div class="card" style="max-width:650px;margin:auto">
+<form onsubmit="contactSubmit(event)">
+<label>Name</label><input id="name" required placeholder="Your name">
+<label>Email</label><input id="email" type="email" required placeholder="Your email">
+<label>Message</label><input id="message" required placeholder="How can we help?">
+<button class="btn btn-primary" type="submit">Send Enquiry</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div><div class="footer-title">NUCLEUS</div><p>Learn • Practice • Succeed</p><p>Online study materials and video learning for Classes 6–10.</p></div>
+<div><div class="footer-title">Quick Links</div><p><a style="color:#cbd5e1" href="#notes">Notes</a></p><p><a style="color:#cbd5e1" href="#videos">Videos</a></p><p><a style="color:#cbd5e1" href="#courses">Courses</a></p></div>
+<div><div class="footer-title">Subjects</div><p>Mathematics</p><p>Science</p><p>English</p></div>
+</div>
+</footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><h2 id="modalTitle">NUCLEUS</h2><p id="modalText"></p><button class="btn btn-primary" onclick="closeModal()">Close</button></div></div>
+
+<script>
+function filterNotes(cls,btn){document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.note').forEach(n=>n.style.display=(cls==='all'||n.dataset.class===cls)?'block':'none')}
+function show(title,text){document.getElementById('modalTitle').textContent=title;document.getElementById('modalText').textContent=text;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function buy(item){show('Buy: '+item,'This demo button is ready for payment integration. Connect a payment gateway such as Razorpay/Stripe and secure PDF delivery to make purchases live.')}
+function enroll(course){show(course+' Course','This demo course page is ready to be connected to your lessons, PDFs and student access.')}
+function playDemo(){show('Video lesson','Add your YouTube, Vimeo or hosted video URL to this lesson card to make it playable.')}
+function contactSubmit(e){e.preventDefault();show('Enquiry received','Thanks! This demo form works on the page. Connect it to your email, WhatsApp or backend to receive real enquiries.');e.target.reset()}
+</script>
+</body>
+</html>
